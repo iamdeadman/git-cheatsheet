@@ -1,0 +1,34 @@
+$ git init // to start a new local repository.
+$ git clone ssh://user@domain.com/repo.git // to clone an existing repository.
+$ git status // to see changed files in your working directory
+$ git diff // changes to tracked files
+$ git add // Add all current changes to the next commit
+$ git commit -a // commit all local changes in tracked files
+$ commit // commit previously staged changes.
+$ git commit - - amend // change the last commit 
+$git log // show all commits , starting with newest
+$ git log -p <file> // show changes over time for a specific file
+$git blame <file> // show who changed what and when in <file>
+$ gut branch // list all existing branches
+$ git checkout <branch> // switch HEAD branch
+$ git branch <new-branch> // create a new branch based on your current head
+$ git branch -d <branch> // delete a local branch 
+$ git tag <tag-name> // mark the current commit with a <tag-name>
+$ git remote -v // list all currently configured remotes.
+$ git remote show <remote> // show information about a remote.
+$ git remote add <remote> <url> // create a new remote repository, named <remote>
+$ git fetch <remote> // fetch all changes from <remote> but don't integrate into HEAD
+$ git pull <remote> <branch> // download changes and directly merge/ integrate into HEAD
+$ git push <remote> <branch> publish a local change on a remote
+$ git push - -tags // publish your tags
+$ git push <remote> <branch> // delete a branch on a remote.
+$ git merge <branch> // merge <branch> into your current HEAD
+$ git rebase <branch> // rebase your current HEAD onto <branch>
+$ git rebase - -abort // abort a rebase
+$ git rebase - -continue // continue a rebase after resolving conflicts.
+$ git reset - -hard HEAD // discard all local changes in your working directory
+$ git checkout HEAD <file> // discard local changes in a specific file
+$ git revert <commit> // revert a commit 
+$ git reset - -hard <commit> // reset your HEAD pointer to a previous commit and discard all changes since then
+$ git reset <commit> //  reset your HEAD pointer to a previous commit and preserve all changes as unstaged changes
+$ git reset - -keep <commit> //reset your HEAD pointer to a previous commit and preserve uncommitted local changes .
