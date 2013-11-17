@@ -6,9 +6,9 @@ $ git add // Add all current changes to the next commit
 $ git commit -a // commit all local changes in tracked files
 $ commit // commit previously staged changes.
 $ git commit - - amend // change the last commit 
-$git log // show all commits , starting with newest
+$ git log // show all commits , starting with newest
 $ git log -p <file> // show changes over time for a specific file
-$git blame <file> // show who changed what and when in <file>
+$ git blame <file> // show who changed what and when in <file>
 $ gut branch // list all existing branches
 $ git checkout <branch> // switch HEAD branch
 $ git branch <new-branch> // create a new branch based on your current head
